@@ -36,6 +36,7 @@ module.exports = function(app) {
     // It will do this by sending out the value "true" have a table
     // req.body is available since we're using the body-parser middleware
       friends.push(req.body);
+      // for(var i=0; i<newFriend.scores.length;i++) newFriend.scores[i] = parseInt(newFriend.scores[i], 10);
       res.json(true);
   });
 

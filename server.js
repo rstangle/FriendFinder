@@ -22,9 +22,11 @@ var PORT = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+
 // TRIED USING THESE TO HAVE THE IMAGES SHOW UP WHEN VIEWING ON THE LOCAL HOST SITE... DIDN'T WORK.
 app.use(express.static("./app/public"));
 app.use(express.static("./images"));
+
 
 // ================================================================================
 // ROUTER
