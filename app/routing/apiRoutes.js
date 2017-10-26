@@ -31,13 +31,31 @@ module.exports = function(app) {
   // Then the server saves the data to the tableData array)
   // ---------------------------------------------------------------------------
 
+  //CONFUSED BY THIS. I SORT OF FOLLOW THE LOGIC, BUT THE RES.JSON(TRUE); LOOSES ME.  WHY IS THIS HERE? 
   app.post("/api/friends", function(req, res) {
     // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
     // It will do this by sending out the value "true" have a table
     // req.body is available since we're using the body-parser middleware
+
       friends.push(req.body);
-      // for(var i=0; i<newFriend.scores.length;i++) newFriend.scores[i] = parseInt(newFriend.scores[i], 10);
+      console.log(friends); // Which screen do I use to check this?  browser? node? localhost?
+
+      //COMPARE USER ANSWERS TO ARRAY OF CHOICES
+      // COMPARE THE DIFFERENCE BETWEEN CURRENT USER'S SCORES AGAINST PREVIOUS USERS SCORES PER INDEX.
+      // ADD THE DIFFERENCES TO CALCULATE totalDifference
+      // USE ABSOLUTE VALUE
+
+      // function (I DON'T KNOW HOW TO DO THIS) {
+      		friends.
+      // }
+
+
+      
       res.json(true);
   });
 
 };
+
+
+// TRIAL CODE THAT DIDN'T WORK BUT MAY NEED TO ALTER TO GET TO WORK SO DON'T WANT TO DELETE IT JUST YET.
+    // for(var i=0; i<newFriend.scores.length;i++) newFriend.scores[i] = parseInt(newFriend.scores[i], 10);
