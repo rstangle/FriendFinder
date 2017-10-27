@@ -38,7 +38,7 @@ module.exports = function(app) {
     // req.body is available since we're using the body-parser middleware
 
       friends.push(req.body);
-      console.log(friends); // Which screen do I use to check this?  browser? node? localhost?
+      // console.log(friends); // Which screen do I use to check this?  browser? node? localhost?
 
       //COMPARE USER ANSWERS TO ARRAY OF CHOICES
       // COMPARE THE DIFFERENCE BETWEEN CURRENT USER'S SCORES AGAINST PREVIOUS USERS SCORES PER INDEX.
@@ -46,7 +46,7 @@ module.exports = function(app) {
       // USE ABSOLUTE VALUE
 
       // function (I DON'T KNOW HOW TO DO THIS) {
-      		friends.
+      		// friends.
       // }
 
 
